@@ -12,14 +12,28 @@
 
 <script>
 export default {
-  name: "CrimeMap",
+  name: "BaseMap",
   props: {
     msg: String
   },
   data: {
     map: null,
     tileLayer: null,
-    layers: []
+    layers: [
+      {
+        id: 0,
+        name: "Crime",
+        active: false,
+        features: [
+          // import crome data as an object here. EX: {
+          //   id: 0,
+          //   name: 'Bogart\'s Smokehouse',
+          //   type: 'marker',
+          //   coords: [38.6109607, -90.2050322],
+          // },
+        ]
+      }
+    ]
   },
   mounted() {
     this.initMap();

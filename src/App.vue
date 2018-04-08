@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <CrimeMap msg="Welcome to Denver Open Data Map"/>
+    <BaseMap msg="Welcome to Denver Open Data Map"/>
   </div>
 </template>
 
 <script>
-import CrimeMap from "./components/CrimeMap.vue";
+import BaseMap from "./components/BaseMap.vue";
 
 export default {
   name: "app",
   components: {
-    CrimeMap
+    BaseMap
   }
 };
 </script>
